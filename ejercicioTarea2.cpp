@@ -12,19 +12,20 @@ int main()
     cout<<("Ingrese el texto que desea contar las palabras:\n");
     
     do {
-        c = getchar(); // Lee un carácter 
-        if (isspace(c) || c == EOF) { // Si el carácter es un espacio o el fin de archivo
-            if (!separador) { // Si no había un separador antes
+        c = getchar(); // Lee un carï¿½cter 
+        if (isspace(c) || c == EOF) { // Si el carï¿½cter es un espacio o el fin de archivo
+            if (!separador) { // Si no habï¿½a un separador antes
                 palabras++; // Incrementa el contador de palabras
                 separador = 1; // Indica que hay un separador
             }
         }
-        else { // Si el carácter no es un espacio ni el fin de archivo
+        else { // Si el carï¿½cter no es un espacio ni el fin de archivo
             separador = 0; // Indica que no hay un separador
         }
     } while (c != EOF); // Repite hasta que se encuentre el fin de archivo
 
-    cout<<("El número de palabras es: %d\n", palabras); // Muestra el resultado
+    cout<<("La cantidad de palabras es:\n");
+    cout<<(palabras); // Muestra el resultado
 
     return 0;
 }
