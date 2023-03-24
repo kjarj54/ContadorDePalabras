@@ -3,8 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
     int c; 
     int palabras = 0;
     int separador = 1; 
@@ -18,8 +17,7 @@ int main()
                 palabras++; // Incrementa el contador de palabras
                 separador = 1; // Indica que hay un separador
             }
-        }
-        else { // Si el car�cter no es un espacio ni el fin de archivo
+        }else { // Si el car�cter no es un espacio ni el fin de archivo
             separador = 0; // Indica que no hay un separador
         }
     } while (c != EOF); // Repite hasta que se encuentre el fin de archivo
