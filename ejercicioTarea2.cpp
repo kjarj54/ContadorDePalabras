@@ -19,7 +19,7 @@ int main(){
    		c = getchar(); // leer otro caracter desde el teclado
   	}
 
-    cout<<("La cantidad de palabras es:\n");
+    cout<<("\nLa cantidad de palabras es:\n");
     cout<<(palabras); // Muestra el resultado
 
     return 0;
